@@ -2,14 +2,19 @@ import GalacticAge from './../src/age-checker.js';
 
 describe(`GalacticAge`, () => {
 
-    test(`should return an object with Earth age`, () => {
+    // test(`should return an object with Earth age`, () => {
+    //     let newGalacticAge = new GalacticAge(1);
+    //     expect(newGalacticAge.earthAge).toEqual(1);
+    // });
+
+    test(`should return an object with converted Earth age`, () => {
         let newGalacticAge = new GalacticAge(1);
-        expect(newGalacticAge.earthAge).toEqual(1);
+        expect(newGalacticAge.convertedAge()).toEqual(1);
     });
 
     test(`should return an object with correct Mercury age`, () => {
-        let newGalacticAge = new GalacticAge(1);
-        expect(newGalacticAge.mercuryAge).toEqual(0.24);
+        let newGalacticAge = new GalacticAge(1, 'mercury');
+        expect(newGalacticAge.convertedAge()).toEqual(0.24);
     });
 
 })
