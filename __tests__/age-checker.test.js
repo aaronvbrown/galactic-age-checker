@@ -26,5 +26,10 @@ describe(`GalacticAge`, () => {
         let newGalacticAge = new GalacticAge(10, 'earth', 8, 15);
         expect(newGalacticAge.yearsUntilFutureBirthday()).toEqual(5);
     });
+    
+    test(`should return an object with correct years until future birthday (mars)`, () => {
+        let newGalacticAge = new GalacticAge(10, 'mars', 8, 15);
+        expect(newGalacticAge.yearsUntilFutureBirthday()).toEqual((15-10)/1.88);
+    });
 
 })
