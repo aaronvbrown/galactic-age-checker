@@ -17,4 +17,9 @@ describe(`GalacticAge`, () => {
         expect(newGalacticAge.convertedAge()).toEqual(0.24);
     });
 
+    test(`should return an object with correct years since past birtday (earth)`, () => {
+        let newGalacticAge = new GalacticAge(10, 'earth', 8);
+        expect(newGalacticAge.yearsSincePastBirthday()).toEqual(2);
+    });
+
 })
