@@ -1,7 +1,8 @@
 export default class GalacticAge {
-    constructor(earthAge, planet='earth') {
+    constructor(earthAge, planet='earth', lastBirthday = 0) {
         this.earthAge = earthAge;
         this.planet = planet;
+        this.lastBirthday = lastBirthday;
         this.yearConversions = {
             earth: 1,
             mercury: .24,
@@ -14,5 +15,9 @@ export default class GalacticAge {
 
     convertedAge() {
         return (this.yearConversions[this.planet] * this.earthAge);
+    }
+
+    yearsSincePastBirthday() {
+        return (this.yearConversions[this.planet] * (this.earthAge - this.lastBirthday));
     }
 }
