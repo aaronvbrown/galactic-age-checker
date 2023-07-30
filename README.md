@@ -1,13 +1,11 @@
-# _Portfolio - Aaron Brown_
+# __Galactic Age Checker__ - Aaron Brown_
 
 #### By **Aaron Brown**
 
-#### A starter template for web applications using html, css, javascript and tooling including: npm, webpack, jest, eslint & babel.
+#### A progrom in javascript to return objects with user's age and time until / from birthdays on several planets.  Written in javascript with tooling including: npm, webpack, jest, eslint & babel.
 
 ## Technologies Used
 
-* html
-* css
 * javascript
 * git
 * npm
@@ -19,7 +17,7 @@
 
 ## Description
 
-This project is intended as a starter template for webpack projects using 
+This project is intended to return ages and time until/from birthdays on several planets 
 
 ## Setup Requirements
 
